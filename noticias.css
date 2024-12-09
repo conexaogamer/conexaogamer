@@ -1,0 +1,31 @@
+/* Remove o estilo padrão dos links */
+.link-destaques {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do elemento pai, sem mudar para azul */
+  }
+  
+  .link-destaques:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: inherit; /* Mantém a cor original */
+  }
+/* Estilo para o botão "Ver notícia completa" */
+.ver-noticia {
+    display: inline-block;
+    padding: 8px 16px; /* Tamanho pequeno e confortável */
+    margin-top: 10px;
+    font-size: 14px; /* Texto pequeno */
+    color: #555; /* Cor discreta (cinza escuro) */
+    text-decoration: none; /* Remove o sublinhado */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 20px; /* Bordas arredondadas para dar um visual mais suave */
+    background-color: transparent; /* Fundo transparente para manter discreto */
+    transition: all 0.3s ease; /* Animação suave ao passar o mouse */
+  }
+  
+  /* Efeito hover para quando o usuário passar o mouse sobre o botão */
+  .ver-noticia:hover {
+    color: #000; /* Muda a cor do texto para preto */
+    border-color: #888; /* Muda a borda para um cinza mais escuro */
+    background-color: #f0f0f0; /* Fundo claro ao passar o mouse */
+  }
+    

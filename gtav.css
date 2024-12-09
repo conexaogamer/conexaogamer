@@ -1,0 +1,26 @@
+/* Estilo do título */
+.ultimas-noticias {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;         /* Tamanho do título */
+    color: #fdfdfd;            /* Cor do título */
+  }
+  
+  /* Parágrafos */
+  #ultimas-noticias p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;         /* Tamanho do texto */
+    line-height: 1.6;        /* Altura da linha */
+    color: #fbf7f7;             /* Cor do texto */
+    margin-top: 15px;        /* Espaçamento superior */
+  }
+  
+  /* Centralizar e dimensionar a imagem */
+  #ultimas-noticias img {
+    display: block;          /* Garante que a imagem seja tratada como bloco */
+    margin: 20px auto;       /* Centraliza horizontalmente */
+    max-width: 100%;         /* Responsividade */
+    height: auto;            /* Mantém proporção */
+    border-radius: 8px;      /* Bordas arredondadas para suavizar */
+    box-shadow: 0px 4px 6px rgb(247, 245, 245); /* Sombra sutil */
+  }

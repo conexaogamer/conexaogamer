@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Gamer</title>
+
+    <!-- Link para o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Link para o CSS do site -->
+    <link rel="stylesheet" href="estilo4.css">
+
+    <!-- Conexões para as fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Ícone da página (Favicon) -->
+    <link rel="icon" href="imgs/modelo_logomarca.png" sizes="1024x1024" type="image/x-icon">
+    
+    <!-- Ícone bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header> 
+        <nav class="nav-bar">     <!-- Início da barra -->
+            <div class="logo">
+                <section class="logo">
+                    <a href="index04.html">  <!-- Link para a página inicial -->
+                        <img src="imgs/modelo_logomarca.png" alt="modelo_logomarca">
+                    </a>
+                </section>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index04.html#ultimas-noticias" class="nav-link">Destaques</a></li>
+                    <li class="nav-item"><a href="Noticias.html" class="nav-link">Notícias</a></li>
+                    <li class="nav-item"><a href="Lançamentos.html" class="nav-link">Lançamentos</a></li>
+                    <li class="nav-item"><a href="Diversão.html" class="nav-link">Diversão</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">Sobre</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+    </header>  
+
+    <div class="container" id="ultimas-noticias">
+       
+       
+        <!-- Título centralizado -->
+        <h2 class="ultimas-noticias">ROCKSTAR PROMETE “COISAS INCRÍVEIS” EM GTA VI</h2>
+    
+        <!-- Texto do anúncio -->
+        <p>
+            Durante a cerimônia do Golden Joystick Awards deste ano, a Rockstar Games venceu na categoria de Jogo Mais Desejado com GTA VI. Um porta-voz do estúdio prometeu no discurso de aceitação que a equipe criativa tem trabalhado em algo surpreendente. 
+            “Muito obrigado por esse prémio, e também gostaríamos de fazer um enorme agradecimento aos fãs, porque são a coisa mais importante para nós. Significam muito para nós na Rockstar. Há uma grande quantidade de pessoas trabalhando em coisas incríveis em GTA VI," disse. "São coisas absolutamente impressionantes. Por isso, é uma verdadeira honra poder vir aqui e aceitar esse prémio em nome do estúdio. Muito obrigado. E sim, vem mais por aí,” concluiu.
+    
+            O jogo chegará ao PlayStation 5 e Xbox Series entre setembro e dezembro do próximo ano. GTA VI segue os protagonistas Lucia e Jason no estado de Leonida, lar das ruas encharcadas de neon de Vice City e além, na maior e mais envolvente evolução da franquia Grand Theft Auto até agora. 
+            Espera-se que seja um dos maiores lançamentos da história do entretenimento.
+        </p>
+    
+        <!-- Imagem centralizada -->
+        <img src="imgs/ROCK.jpg" alt="ROCKSTAR" class="img-fluid">
+    </div>
+    
+
+
+
+    <section class="socias">    <!-- Rodapé -->
+        <div class="interface">
+            <article class="txt-socias">
+                <h3>Fique online conosco!</h3>
+            </article>
+
+            <article class="icons-socias">
+                <a href="https://www.instagram.com/conex.aogamer?igsh=MWRkeXNmM211NjB4cg==" target="_blank">
+                    <button><i class="bi bi-instagram"></i> <p>Instagram</p></button>
+                </a>
+                <a href="https://x.com/ConexaoGamerOfc?s=08" target="_blank">
+                    <button><i class="bi bi-twitter-x"></i> <p>Twitter X</p></button>
+                </a>
+                <a href="mailto:Coneexao.gameroficial@gmail.com" target="_blank">
+                    <button>
+                        <i class="bi bi-envelope-at"></i>
+                        <p>Email</p>
+                    </button>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Script para o menu mobile -->
+    <script>
+        function menuShow() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

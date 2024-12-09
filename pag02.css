@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap');  
+
+/* Inicio nav bar */
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.logo {
+  display: flex;                /* Permite um melhor controle do alinhamento */
+  justify-content: center;      /* Centraliza a imagem horizontalmente */
+  align-items: center;          /* Centraliza a imagem verticalmente */
+  height: 100px;                /* Define a altura fixa da seção */
+}
+
+section.logo img {
+  width: 160px;                 /* Ajuste a largura da logomarca conforme necessário */
+  height: auto;                 /* Mantém a proporção original */
+  max-width: 100%;              /* Garante que a imagem não ultrapasse o contêiner */
+}
+
+
+body {
+  background-color: #ffffff;
+  width: 100%;
+}
+.logo img {
+  max-width: 400px;
+}
+
+section.hero-site{                     /* img abaixo da navbar */
+  height: 82vh; 
+  background-image: url(imgs/Designsemnome.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 466px;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("imgs/Designsemnome.png");
+  color:#fff
+}
+
+.hero-site .interface {        
+  display: flex;
+  align-items: center;         /* Centraliza verticalmente */
+  justify-content: center;     /* Centraliza horizontalmente */
+  height: 70vh;                /* Garantia de altura suficiente para visualização */
+  padding: 20px;               /* Espaçamento interno para afastar das bordas */
+  box-sizing: border-box;      /* Inclui padding dentro da altura/ largura total */
+  text-align: center;          /* Alinha o texto ao centro */
+}
+
+.txt-hero {
+  max-width: 600px;            /* Define uma largura máxima para evitar textos muito largos */
+  margin: 0 auto;              /* Garante que a div esteja centralizada */
+}
+
+
+.hero-site .txt-hero h1{
+  font-size: 4em;
+}
+
+h3 {
+  font-family: Tahoma;
+}
+
+header {
+  background-color: #000000;
+  box-shadow: 0px 3px 10px #000000;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 17px;
+}
+
+.nav-link {
+    display: inline-block;
+    font-size: 1.15rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: transparent; /* Garantir que o texto tenha cor transparente */
+    background: linear-gradient(45deg, #e01313, #ebe717, #4bcc18, #04a8da, #1f08ee, #d413b4);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+
+    -webkit-background-clip: text; /* Aplica o gradiente no texto */
+    -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o gradiente */
+    transition: color 0.2s; /* Suaviza a transição da cor quando necessário */
+}
+
+@keyframes degrade {
+    0% {
+        background-position: 0%; /* Começa o gradiente na posição inicial */
+    }
+    100% {
+        background-position: 400%; /* Move o gradiente ao longo do texto */
+    }
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
+  position: relative;
+  display: block;
+  transition: .2s;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.nav-link::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+ul:hover li a {
+  opacity: .3;
+}
+
+ul li a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.login-button button {
+  width: 90px;
+  height: 50px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.login-button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Fim nav bar */
+
+
+/* Estilo dos botoes de contato começo*/
+
+section.rodape{
+  background-color: #fff;
+
+}
+
+
+
+.carousel-inner {
+    border-radius: 30px; /* Arredonda o contêiner do carrossel */
+    overflow: hidden; /* Garante que nada ultrapasse as bordas arredondadas */
+  }
+  
+  .carousel-item {
+    border-radius: 30px; /* Arredonda cada item do carrossel */
+    background-size: cover; /* Garante que a imagem ocupe todo o espaço sem distorções */
+    background-position: center; /* Centraliza a imagem */
+    opacity: 1; /* Começa com a imagem invisível */
+    transition: opacity 1s ease-in-out; /* Suaviza a transição de opacidade */
+  }
+  
+  /* Durante a transição */
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    opacity: 1; /* Torna a imagem visível durante a transição */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Adiciona suavidade à transição de opacidade e transformação */
+  }
+  
+  /* Efeito de zoom nas imagens durante a transição */
+  .carousel-item-next,
+  .carousel-item-prev {
+    transform: scale(1.05); /* Pequeno zoom para um efeito visual mais interessante */
+  }
+  
+
+/* Estilo para dispositivos móveis começo */
+@media (max-width: 730px) {
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+  
+  .nav-list,
+  .login-button {
+    display: none;
+  }
+  
+  .mobile-menu-icon {
+    display: block;
+  }
+  
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+  
+  .mobile-menu .login-button {
+    display: block;
+    padding: 1rem 2rem;
+  }
+  
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
+  
+  .mobile-menu.open {
+    display: block;
+  }
+}
+
+/* Estilo para dispositivos móveis fim */
